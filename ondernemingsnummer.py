@@ -1,6 +1,4 @@
-# generate rijksregisternummer
-
-def rijksregisternummer(eerstecijfers):
+def ondernemingsnummer(eerstecijfers):
     for i in range(0, 99999):
         aantal = len(str(i))
         f = (5 - aantal) * "0"
@@ -11,5 +9,6 @@ def rijksregisternummer(eerstecijfers):
         controle = 97 - (rrnrA % 97)
         if controle == rrnrC:
             print("nummer is: " + str(rrnr))
-x = 981021
-print(rijksregisternummer(x))
+#x = 981021
+x = "073634"
+print(ondernemingsnummer(x))

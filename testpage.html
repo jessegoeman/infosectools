@@ -1,22 +1,242 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8">
-    <title>Intigriti - Bug Bounty & Agile Pentesting Platform</title>
-    <base href="/researcher/">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <script src="./assets/env.js"></script>
-    <link rel="stylesheet" href="styles.f8dad9147ef62a3e994f.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="language" content="nl" />
+	<meta name="author" content="FK Gent" />
+	<title>Home &ndash; FaculteitenKonvent Gent</title>
+
+	<link rel="stylesheet" type="text/css" href="http://cdn.fkgent.be/print.css" media="print" />
+	<link rel="stylesheet" type="text/css" href="http://www.fkgent.be/fkbooks/assets/style.css" media="screen,print" />
+	<link rel="stylesheet" type="text/css" href="http://www.fkgent.be/fkbooks/assets/css/smoothness/jquery-ui-1.8.14.custom.css" />
+			<link rel="stylesheet" type="text/css" href="http://cdn.fkgent.be/css/frontend/bjqs.css" media="screen,print" />
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="http://cdn.fkgent.be/js/jquery.tablesorter.min.js"></script>
+	<script type="text/javascript" src="http://cdn.fkgent.be/js/jquery.tablefilter.min.js"></script>
+	<script type="text/javascript" src="http://cdn.fkgent.be/js/jquery-ui-timepicker-addon.min.js"></script>
+	<script type="text/javascript" src="http://www.fkgent.be/ckeditor/ckeditor.js"></script>
+	<script type="text/javascript" src="http://www.fkgent.be/ckeditor/adapters/jquery.js"></script>
+			<script type="text/javascript" src="http://cdn.fkgent.be/js/frontend/bjqs-1.3.min.js"></script>
+	<script type="text/javascript">
+		function pressed(e){
+			if(e.ctrlKey) {
+				e.preventDefault();
+			}
+		}
+
+		// Blokkeer ctrl + J (voor barcode scanner)
+		$(function(){   
+			$(document).keydown(function(objEvent) {        
+				if (objEvent.ctrlKey) {       
+					if (objEvent.keyCode == 74)                       
+						return false;    
+				}        
+			});
+		});   
+
+		$(function(){ 
+			// Accordion
+			$("#accordion").accordion({ 
+				header: "h3.ac_title", 
+				autoHeight: false,
+				navigation: true,
+				active: false,
+			});
+
+			//hover states on the static widgets
+			$('#dialog_link, ul#icons li').hover(
+				function() { $(this).addClass('ui-state-hover'); }, 
+				function() { $(this).removeClass('ui-state-hover'); }
+			);
+
+			$(function() {
+				$("input:submit, a.form_button, button", "form, p" ).button();
+				$("a", ".accordion" ).click(function() { return false; });
+			});
+
+
+		});
+
+		this.tooltip = function(){	
+			/* CONFIG */		
+				xOffset = 10;
+				yOffset = 20;		
+				// these 2 variable determine popup's distance from the cursor
+				// you might want to adjust to get the right result		
+			/* END CONFIG */		
+			$("a.tooltip, label.tooltip").hover(function(e){											  
+				this.t = this.title;
+				this.title = "";									  
+				$("body").append("<p id='tooltip'>"+ this.t +"</p>");
+				$("#tooltip")
+					.css("top",(e.pageY - xOffset) + "px")
+					.css("left",(e.pageX + yOffset) + "px")
+					.fadeIn("fast");		
+			},
+			function(){
+				this.title = this.t;		
+				$("#tooltip").remove();
+			});	
+			$("a.tooltip, label.tooltip").mousemove(function(e){
+				$("#tooltip")
+					.css("top",(e.pageY - xOffset) + "px")
+					.css("left",(e.pageX + yOffset) + "px");
+			});			
+		};
+
+		// starting the script on page load
+		$(document).ready(function(){
+			tooltip();
+		});
+	</script>
+    
+	<script type="text/javascript">
+    
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-33650920-4']);
+      _gaq.push(['_trackPageview']);
+    
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    
+    </script>
 </head>
-
 <body>
-    <app-root></app-root>
-    <script src="runtime.0d15793f6e46723148c6.js" defer></script>
-    <script src="polyfills-es5.06e2cabac63c10dc35bd.js" nomodule defer></script>
-    <script src="polyfills.f8826e346119a67fa147.js" defer></script>
-    <script src="main.20b74e7a88231ec5a5b0.js" defer></script>
-</body>
+    <div id="header-wrapper"><div id="header">
+			<h1><a href="http://www.fkgent.be/fkbooks/">FaculteitenKonvent Gent - Boekenverkoop</a></h1>    </div></div>
 
+    <div id="main-wrapper"><div id="main" class="cols">
+        <div class="col col-7 col-main"><h2>Welkom</h2><p>Kies jouw studentenkring</p><div class="cols">				
+		<div class="kring ">
+				<a href="http://www.fkgent.be/fkbooks/nl/frontend/kring/set/1">
+			<img src="http://cdn.fkgent.be/schilden/VGK-fgen.small.jpg"
+				alt="Logo VGK" class="image-center" />
+		<p>Vlaamse Geneeskundige Kring</p>
+		</a>
+		</div>
+						
+		<div class="kring ">
+				<a href="http://www.fkgent.be/fkbooks/nl/frontend/kring/set/14">
+			<img src="http://cdn.fkgent.be/schilden/Lombrosiana.small.jpg"
+				alt="Logo Lombrosiana" class="image-center" />
+		<p>Lombrosiana</p>
+		</a>
+		</div>
+						
+		<div class="kring ">
+				<a href="http://www.fkgent.be/fkbooks/nl/frontend/kring/set/16">
+			<img src="http://cdn.fkgent.be/schilden/Politeia.small.jpg"
+				alt="Logo Politeia" class="image-center" />
+		<p>Politeia</p>
+		</a>
+		</div>
+						
+		<div class="kring col-last">
+				<a href="http://www.fkgent.be/fkbooks/nl/frontend/kring/set/19">
+			<img src="http://cdn.fkgent.be/schilden/VBK.small.jpg"
+				alt="Logo VBK" class="image-center" />
+		<p>Vlaamse Biomedische Kring</p>
+		</a>
+		</div>
+		</div><div class="cols">				
+		<div class="kring ">
+				<a href="http://www.fkgent.be/fkbooks/nl/frontend/kring/set/22">
+			<img src="http://cdn.fkgent.be/schilden/VGK-flwi.small.jpg"
+				alt="Logo VGK" class="image-center" />
+		<p>Vlaamse Geschiedkundige Kring</p>
+		</a>
+		</div>
+						
+		<div class="kring ">
+				<a href="http://www.fkgent.be/fkbooks/nl/frontend/kring/set/44">
+			<img src="http://cdn.fkgent.be/schilden/LILA.small.jpg"
+				alt="Logo Lila" class="image-center" />
+		<p>Lila</p>
+		</a>
+		</div>
+		</div>
+<style type="text/css">
+.kring {
+    width: 122px;
+    margin: 16px 20px 0 0;
+    float: left;
+}
+
+.kring p {
+    text-align: center;
+    margin: 6px 0 0 0;
+    color: #000;
+}
+
+.kring a:hover p { text-decoration: underline; }
+</style>
+
+</div>
+		<div class="col col-3 col-last">
+
+
+
+
+<h3>Control Panel</h3><p><a href="http://www.fkgent.be/fkbooks/en/frontend/kring"><img src="http://www.fkgent.be/fkbooks/assets/uk-flag.jpg" alt="" width="50px" height="25px" style=" margin:0px 2px" /></a><a href="http://www.fkgent.be/fkbooks/nl/frontend/kring"><img src="http://www.fkgent.be/fkbooks/assets/belgium-flag.jpg" alt="" width="50px" height="25px" style=" margin:0px 2px"/></a>
+<h3>Partners</h3>
+<div class="sponsors">
+    <p>
+    <a href="https://www.bnpparibasfortis.be/nl/Dagelijks-bankieren/Ontdek/Producten/Zichtrekeningen/Hello4You?axes4=priv">
+        <img src="http://cdn.fkgent.be/img/sponsors/v2/bnp.png" alt="BNP Paribas">
+    </a>
+    </p>
+    <p>
+    <a href="http://bocca.be/">
+        <img src="http://cdn.fkgent.be/img/sponsors/v2/bocca.png" alt="Bocca">
+    </a>
+    </p>
+    <p>
+    <a href="https://www.ski-line.be">
+        <img src="http://cdn.fkgent.be/img/sponsors/v2/skiline.png" alt="Skiline">
+    </a>
+    </p>
+    <p>
+    <a href="https://www.stadium.be/nl/gent-stadium-coupure">
+        <img src="http://cdn.fkgent.be/img/sponsors/v2/stadium.png" alt="Stadium Gent">
+    </a>
+    </p>
+    <p>
+    <a href="https://www.standaardboekhandel.be/">
+        <img src="http://cdn.fkgent.be/img/sponsors/v2/standaard.png" alt="Standaard Boekhandel">
+    </a>
+    </p>
+    <p>
+    <a href="https://www.studant.be/">
+        <img src="http://cdn.fkgent.be/img/sponsors/v2/studant.png" alt="Studant">
+    </a>
+    </p>
+</div>
+<div id="sponsor-div">
+    <ul class="bjqs" style="height: 210px">
+            </ul>
+</div>
+
+<script>
+  jQuery(document).ready(function($) {
+    $('#sponsor-div').bjqs({
+      height        : 240,
+      width         : 200,
+      animspeed     : 3000,
+      randomstart   : true
+    });
+  });
+</script>
+
+</div>	</div>
+
+    <div id="footer">
+        <p><a href="http://fkgent.be">FaculteitenKonvent Gent</a> &bull;
+            De Therminal, Hoveniersberg 24 - 9000 Gent, Belgium &bull;
+            +32.9.264.70.93 &bull; info@fkserv.ugent.be</p>
+    </div>
+</body>
 </html>

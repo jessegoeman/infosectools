@@ -1,0 +1,4 @@
+www.nalmed.com
+autodiscover.nalmed.com
+catch-all-dns.nalmed.com
+www.catch-all-dns.nalmed.com

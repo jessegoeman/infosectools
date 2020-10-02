@@ -1,0 +1,5 @@
+www.terramatermagazin.at
+autodiscover.terramatermagazin.at
+b2b.terramatermagazin.at
+catch-all-dns.terramatermagazin.at
+www.catch-all-dns.terramatermagazin.at

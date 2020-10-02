@@ -1,0 +1,12 @@
+www.kartfighter.com
+app.kartfighter.com
+files.kartfighter.com
+qrcode.kartfighter.com
+raceoff.kartfighter.com
+redbull.kartfighter.com
+redbullracing.kartfighter.com
+redbullracingadmin.kartfighter.com
+social.kartfighter.com
+www.social.kartfighter.com
+three.kartfighter.com
+worldtour.kartfighter.com

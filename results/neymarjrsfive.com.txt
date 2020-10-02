@@ -1,0 +1,8 @@
+www.neymarjrsfive.com
+dev-www.neymarjrsfive.com
+game.neymarjrsfive.com
+live.neymarjrsfive.com
+stage-www.neymarjrsfive.com
+www.redbullneymarjrsfive.com
+www.game.redbullneymarjrsfive.com
+stage-www.game.redbullneymarjrsfive.com

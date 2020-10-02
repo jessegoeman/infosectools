@@ -1,0 +1,5 @@
+www.redbullmobile.om
+api.redbullmobile.om
+www.api.redbullmobile.om
+apidev.redbullmobile.om
+www.apidev.redbullmobile.om

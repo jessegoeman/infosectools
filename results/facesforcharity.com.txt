@@ -1,0 +1,5 @@
+www.facesforcharity.com
+origin.facesforcharity.com
+origin-www.facesforcharity.com
+test.facesforcharity.com
+test1.facesforcharity.com

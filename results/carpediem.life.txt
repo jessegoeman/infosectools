@@ -1,0 +1,5 @@
+www.carpediem.life
+b2b.carpediem.life
+dev-www.carpediem.life
+stage-www.carpediem.life
+view.carpediem.life

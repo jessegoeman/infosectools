@@ -1,0 +1,8 @@
+www.redbullmuenchen.de
+account.redbullmuenchen.de
+account-q.redbullmuenchen.de
+dauerkarten.redbullmuenchen.de
+dauerkarten-q.redbullmuenchen.de
+shop.redbullmuenchen.de
+tickets.redbullmuenchen.de
+tickets-q.redbullmuenchen.de

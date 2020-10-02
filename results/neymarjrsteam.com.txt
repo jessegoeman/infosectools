@@ -1,0 +1,5 @@
+www.neymarjrsteam.com
+api.neymarjrsteam.com
+game.neymarjrsteam.com
+stage-api.neymarjrsteam.com
+stage-game.neymarjrsteam.com

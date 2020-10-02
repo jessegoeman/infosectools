@@ -1,0 +1,8 @@
+www.analyticsuser.com
+autodiscover.analyticsuser.com
+courses.analyticsuser.com
+www.courses.analyticsuser.com
+mail.analyticsuser.com
+pm.analyticsuser.com
+www.pm.analyticsuser.com
+webdisk.analyticsuser.com

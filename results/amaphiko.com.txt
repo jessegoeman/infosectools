@@ -1,0 +1,5 @@
+www.amaphiko.com
+cpanel.amaphiko.com
+mail.amaphiko.com
+webdisk.amaphiko.com
+webmail.amaphiko.com

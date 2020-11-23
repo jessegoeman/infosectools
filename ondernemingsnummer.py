@@ -1,7 +1,7 @@
 def ondernemingsnummer(eerstecijfers):
-    for i in range(0, 99999):
+    for i in range(0, 9999):
         aantal = len(str(i))
-        f = (5 - aantal) * "0"
+        f = (4 - aantal) * "0"
         cijf = f + str(i)
         rrnr = str(eerstecijfers) + str(cijf)
         rrnrA = int(rrnr[:9])
